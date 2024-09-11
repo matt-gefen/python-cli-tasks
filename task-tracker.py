@@ -6,8 +6,11 @@
 # 4. Change task status (in progress or done)
 # 5. Change status due date
 
-import sys
 import argparse
+import json
+
+with open('tasks.json') as data_json:
+    tasks_data = json.load(data_json)
 
 # Initialize parser
 parser = argparse.ArgumentParser()
@@ -21,3 +24,4 @@ args = parser.parse_args()
 
 if args.foo:
    foo()
+   print(tasks_data)
