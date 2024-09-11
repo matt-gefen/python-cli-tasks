@@ -1,3 +1,14 @@
 {
-  "data": "hello there"
+  "tasks": [
+    {
+      "id": 1,
+      "task": "This is a test status",
+      "status": "in-progress"
+    },
+    {
+      "id": 2,
+      "task": "This is a test status",
+      "status": "in-progress"
+    }
+  ]
 }
